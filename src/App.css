@@ -1,0 +1,49 @@
+
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  color: white;
+}
+
+body{
+  background-color: black;
+  padding: 50px;
+}
+
+.whole-page{
+  padding: 25px;
+  font-size: larger;
+}
+
+.icons{
+  padding: 10px;
+  width: 30px;
+  height: 30px;
+}
+
+ul{
+  list-style: none;
+  margin: 25px 50px 75px 30px;
+}
+
+li.main-list{
+  border-bottom: solid 3px white;
+}
+
+.sidenav{
+  height: 100%;
+  width: 25%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  background-color: #232323;
+  padding: 15px 10px;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: colomn;
+  align-items: center;
+}
