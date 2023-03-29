@@ -1,5 +1,6 @@
 import React from 'react';
 const API_KEY = import.meta.env.VITE_APP_API_KEY;
+import { Link } from "react-router-dom";
 
 const CoinInfo = ({name, brewery_type}) => {
   /*useEffect(() => {
@@ -19,11 +20,18 @@ const CoinInfo = ({name, brewery_type}) => {
   const [price, setPrice] = useState(null);*/
   
   return (
+    
     <div>
+          <Link
+      to={`/brewDetails/${name}`}
+      key={name}
+    >
         <li className="main-list">
           {name}, a {brewery_type} brewery
         </li>
+        </Link>
     </div>
+  
   );
 };
 
